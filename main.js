@@ -34,3 +34,45 @@ function new_image(get_image){
         canvas.add(block_image_object);
     });
 }
+
+
+window.addEventListener("keydown", my_keydown);
+
+function my_keydown(e){
+    keyPressed=e.keyCode;
+    console.log(keyPressed);
+    
+    if(keyPressed=='70'){
+        new_image("ironman_face.png");
+        console.log("f");
+    }
+
+    if(keyPressed=='66'){
+        new_image("spiderman_body.png");
+        console.log("b");
+    }
+
+    if(keyPressed=='76'){
+        new_image("hulk_legs.png");
+        console.log("l");
+    }
+
+    if(keyPressed=='71'){
+        new_image("thor_right_hand");
+        console.log("g");
+    }
+
+    if(keyPressed=='82'){
+        new_image("captain_america_left_hand.png");
+        console.log("r");
+    }
+
+    if(keyPressed=='72'){
+        new_image("");
+        console.log("h");
+    }
+    if(keyPressed=='38'){
+        up();
+        console.log("up");
+    }
+}
